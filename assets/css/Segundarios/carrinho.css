@@ -1,0 +1,69 @@
+/* Header */
+.shopping-cart {
+    margin: 80px auto;
+}
+
+.shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    background-color: #d47d0b;
+    color: #fff;
+    text-align: left;
+    font-weight: normal;
+    padding: 5px;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #d47d0b;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.amount {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.amount table {
+    border-top: 3px solid #d47d0b;
+    width: 100%;
+    max-width: 420px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+@media(max-width: 800px){
+    .cart-info p {
+        display: none;
+    }
+}
+/* Fim Header */

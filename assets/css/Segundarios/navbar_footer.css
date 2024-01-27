@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'arial';
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+/*Top */
+.header-inner-content {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    background-color: #d47d0b;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 1rem #2c2c2c;
+}
+
+.logo span{
+    color: #5ccb5f;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.show-menu .homepage, .adoption, .petshop, .contacts, .SobreNos{
+    text-decoration: none;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+    margin: 10;
+}
+
+.nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+.cart{
+    margin-right: -1rem;
+}
+
+.expand_more{
+    margin-left: -18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul li{
+    color: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: blod;
+}
+
+.menu-button{
+    display: none;
+    margin-right: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .nav-icon-container img{
+        width: 22px;
+    }
+    .menu-button{
+        display: block;
+        margin-right: -1px;
+    }
+
+    .show-menu{
+        display: none;
+        position: absolute;
+        background-color: #d47d0b;
+        width: 100%;
+        top: 43px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+/* Fim Media Queries */
+/* Fim Top */
+
+/* Footer */
+.gray-background{
+    background-color: #d47d0b;
+}
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.background-footer{
+    margin-bottom: 0rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    color: #fffafa;
+    padding: 4rem 1rem;
+    gap: 2rem;
+}
+
+.download-option>*{
+    margin: 1rem 0;
+
+}
+
+.download-option>p:first-child{
+    font-weight: bold;
+    color: #fff;
+}
+
+.download-option>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.download-option>div img{
+    width: 151px;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.logo-footer .logo{
+    margin-bottom: 25px;
+}
+
+.links-footer h3{
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.links-footer ul{
+    list-style: none;
+}
+
+.links-footer ul li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.copyright{
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 800px){
+    .footer-content{
+        display: inline;
+        font-size: 0.8rem;
+    }
+
+    .footer-content>div{
+        padding: 1rem;
+    }
+
+    .download-option>div{
+        display: inline;
+    }
+
+    .download-option>div img{
+        width: 120px;
+    }
+
+    .copyright{
+        font-size: 0.8rem;
+    }
+}
+/* Fim Media Queries */
+/* Footer */
