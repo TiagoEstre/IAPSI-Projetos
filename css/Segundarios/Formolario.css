@@ -1,0 +1,14 @@
+/* Header */
+.mb-4 input {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-col img{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 500px;
+}
+/* Fim Header */

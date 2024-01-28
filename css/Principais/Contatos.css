@@ -1,0 +1,224 @@
+/* Header */
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.contactUs .title h2 {
+    font-weight: 500;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.50);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3 {
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+
+}
+
+/* Form */
+
+
+.form-box {
+    position: relative;
+    width: 100%;
+}
+
+.form-box .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.form-box .row100 .input-box {
+    width: 100%;
+}
+
+.input-box span {
+    color: #1e1e1e;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-box input {
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.input-box textarea {
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.input-box input[type="submit"] {
+    background: #2590fa;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.input-box ::placeholder {
+    color: #999;
+}
+/* Fim Form */
+
+/* Info */
+.info {
+    background: #d47d0b;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .info-box div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info .info-box div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #8f560b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .info-box div p {
+    color: #fff;
+}
+
+.info .info-box div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+/* Fim Info */
+
+/* Map */
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Fim Map */
+/* Media Queries */
+
+/* Fim Media Queries */
+@media(max-width: 1080px){
+    .contactUs{
+        padding: 20px;
+    }
+
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    
+    .form-box .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .map {
+        padding: 0;
+        min-height: 300px;
+    }
+}
+/* Fim Header */

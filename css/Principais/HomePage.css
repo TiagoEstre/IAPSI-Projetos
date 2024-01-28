@@ -1,0 +1,279 @@
+/* Header */
+header{
+    background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.header-bottom-side-left button{
+    background-color: #0084ff;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.header-bottom-side-left button:hover{
+    background-color: #004c94;
+}
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 0 20px #4c4b4b;
+}
+
+/* Media Queries */
+@media (max-width: 800px){
+
+    .header-bottom-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .header-bottom-side-right img{
+        margin-top: 1rem;
+    }
+}
+/* Fim Media Queries */
+/* Fim Header */
+
+/* Main Content */
+main{
+    background-color: #ebebeb;
+}
+
+.gray-background{
+    background-color: #d47d0b;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.cols-3 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #0084ff;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+.pet{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.species-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #ff9203;
+}
+
+.page-inner-content-petshop{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.product-name{
+    font-weight: 600;
+}
+
+.rate{
+    color: #0084ff;
+}
+
+.produtc-price span{
+    font-weight: 600;
+}
+
+.product{
+    margin-top: 10px;
+    margin-bottom: -40%;
+}
+
+.product:first-child{
+    margin-bottom: 0%;
+}
+
+.product img{
+    margin-top: -30px;
+}
+
+.exclusive-container{
+    color: #fff;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 800px){
+    .section-title{
+        font-size: 1rem;
+    }
+
+    .cols-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-name, .rate, .produtc-price, .species-name, .pet-name{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+    .product{
+        margin-bottom: 2rem;
+    }
+    .section-title{
+        margin-top: -4rem;
+    }
+    .gray-background{
+        margin-bottom: 8rem;
+    }
+
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+    .exclusive-container img{
+        margin-bottom: 2rem
+    };
+}
+/* Fim Media Queries */
+
+/* Testimonials */
+.testimonials{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.testimonial:hover{
+    transform: translateY(-5px);
+}
+
+.testimonial p{
+    margin: px 0;
+}
+
+.testimonial p:first-child{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #0084ff;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.testimonial p:last-child{
+    font-weight: bold;
+}
+/* Media Queries */
+@media (max-width: 800px){
+    .testimonials{
+        flex-direction: column;
+    }
+
+    .testimonial{
+        margin-bottom: 1.2rem;
+    }
+    .testimonial:first-child{
+        margin-top: -8rem;
+    }
+    .testimonial p:last-child{
+        margin-top: 1rem;
+    }
+}
+/* Fim Media Queries */
+/* Fim Testimonials */
+/* Fim Main Content */

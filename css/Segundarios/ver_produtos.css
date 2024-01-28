@@ -1,0 +1,145 @@
+/* Header */
+.body-categories {
+    margin-top: 40px;
+}
+
+.body-categories .line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.body-categories .col-2 img {
+    width: 100%;
+    padding: 0;
+}
+
+.body-categories #product-img {
+    display: grid;
+    margin-bottom: 0.5rem;
+    height: auto;
+    object-fit: cover;
+    object-position: auto;
+}
+
+.body-categories .col-2{
+    padding: 20px;
+}
+
+.body-categories h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.body-categories h1 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.body-categories .col-2 p {
+    font-size: 15px;
+}
+
+.body-categories select {
+    display: block;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #d47d0b;
+}
+
+.body-categories select:focus {
+    outline: none;
+}
+
+.body-categories input {
+    width: 50px;
+    height: 40px;
+    margin: 0 10px 20px 0 ;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid #d47d0b;
+}
+
+.body-categories input:focus {
+    outline: none;
+}
+
+.body-categories .btn {
+    background: #d47d0b;
+    color: #fff;
+    border: none;
+    width: 142px;
+    height: 42px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.body-categories .btn:hover {
+    background-color: #5ccb5f;
+    color: #000;
+}
+
+.body-categories .col-2 p:last-child{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.img-line {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.product-similar .section-title {
+    font-size: 1.5rem;
+    padding-top: 10rem;
+    padding-left: 1rem;
+}
+
+.product-similar .cols {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.product-similar .cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.product-similar .product {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.product-similar .product:hover {
+    transform: translateY(-5px);
+}
+
+.cols-4 img{
+    max-width: 100%;
+}
+
+
+
+/* Media Queries */
+@media(max-width: 700px){
+
+    .body-categories .line {
+        display: inline;
+    }
+
+    .body-categories #product-img{
+        display: inline;  
+    }
+}
+/* Fim Media Queries */
+/* Fim Header */
